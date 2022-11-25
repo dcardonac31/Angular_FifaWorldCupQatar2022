@@ -1,0 +1,14 @@
+<form>
+    <div class=row>
+        <div class=col-1>
+            <label for="datematch">Fecha Partidos</label>
+        </div>
+        <div class=col>
+          <input type="date" id="datematch" name="datematch" [(ngModel)]="dateMatch" (ngModelChange)="getMatchesByDate()">
+        </div>
+    </div>
+</form>
+
+<div>
+    <app-card-match-info [matchesData]="matches"></app-card-match-info>
+</div>

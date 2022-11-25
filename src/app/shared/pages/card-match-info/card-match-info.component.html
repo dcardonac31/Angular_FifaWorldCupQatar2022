@@ -1,0 +1,19 @@
+<div class="container-cards">
+  <div class="card" style="width: 18rem;" *ngFor="let match of matchesData">
+    <div class="card-body">
+      <h5 class="card-title">Grupo {{match.group}}</h5>
+      <div style="display: flex ;">
+        <p class="card-text"><img src={{match.home_flag}} class="img-flag" alt="home_flag"></p>
+        <p class="card-text" style="padding: 10px;">vs</p>
+        <p class="card-text"><img src={{match.away_flag}} class="img-flag" alt="away_flag"></p>
+      </div>
+      <p class="card-text">{{match.home_team_en}} vs {{match.away_team_en}}</p>
+      <p class="card-text"><b>Horario Qatar (UTC+3) : </b>{{match.local_date}}</p>
+      <p class="card-text"><b>Finalizado : </b>{{match.finished}}</p>
+      <p class="card-text"><b>Marcador:</b> {{match.home_score}} - {{match.away_score}}</p>
+      <p class="card-text"><b>Goleadores</b></p>
+      <p class="card-text">{{match.home_team_en}} ({{match.home_scorers}})</p>
+      <p class="card-text">{{match.away_team_en}} ({{match.away_scorers}})</p>
+    </div>
+  </div>
+</div>

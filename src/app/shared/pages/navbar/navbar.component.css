@@ -1,0 +1,14 @@
+.navbar-color {
+    background-color: rgb(85, 0, 101);
+}
+
+.nav-link {
+    font-size: medium;
+    font-family: 'Poppins 500','Noto Sans Regular','Helvetica Neue', Arial, sans-serif;
+    color: white;
+}
+
+.nav-link:hover {
+    color: #D1A868;
+    cursor: pointer;
+}

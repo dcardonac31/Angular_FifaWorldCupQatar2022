@@ -1,0 +1,31 @@
+<h3>Grupo {{standingData[0].group}}</h3>
+<table class="table table-light">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Selección</th>
+        <th scope="col">PJ</th>
+        <th scope="col">G</th>
+        <th scope="col">E</th>
+        <th scope="col">P</th>
+        <th scope="col">GF</th>
+        <th scope="col">GC</th>
+        <th scope="col">DG</th>
+        <th scope="col">Pts</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let team of standingData[0].teams; index as i">
+      <tr>
+        <th>{{i+1}}</th>
+        <td><img src={{team.flag}} alt="flag" class="img-flag-table"> - {{team.name_en}}</td>
+        <td>{{team.mp}}</td>
+        <td>{{team.w}}</td>
+        <td>{{team.d}}</td>
+        <td>{{team.l}}</td>
+        <td>{{team.gf}}</td>
+        <td>{{team.ga}}</td>
+        <td>{{team.gd}}</td>
+        <td>{{team.pts}}</td>
+      </tr>
+    </tbody>
+  </table>
