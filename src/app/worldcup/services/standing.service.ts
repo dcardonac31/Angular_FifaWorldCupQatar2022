@@ -11,7 +11,7 @@ export class StandingService {
 
   private apiUrl = AppConfiguration.Setting().apiUrl;
   apiUrlStanding: string = this.apiUrl + '/standings/getStandings';
-  apiUrlStandingByGroup: string = this.apiUrl + '/standings/getStandings/';
+  apiUrlStandingByGroup: string = this.apiUrl + '/standings/getStandingsByGroup/';
 
   constructor(private http: HttpClient) { }
 
